@@ -1,0 +1,24 @@
+---
+- name: set locale
+  lineinfile: dest=/etc/default/locale line="LC_ALL=C"
+
+- name: install curl
+  apt: name={{ item }} update_cache=yes
+  with_items:
+    - git
+    - curl
+    - libpq-dev
+    - python-dev
+    - python-psycopg2
+
+- name: install docker
+  shell: curl -sSL https://get.docker.com/ | sh
+  args:
+    creates: /usr/bin/docker
+
+- name: install pip
+  shell: curl https://bootstrap.pypa.io/get-pip.py | python -
+
+- name: Install docker-py
+  pip: name=docker-py version=1.1.0
+

@@ -1,0 +1,6 @@
+---
+- name: Site Playbook
+  hosts: default
+  sudo: True
+  roles:
+    - site
