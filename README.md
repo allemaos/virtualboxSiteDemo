@@ -4,13 +4,21 @@ with tasks:
 - java from [mhamrah/ansible-java8](https://github.com/mhamrah/ansible-java8)
 - rails from [horaceheaven/quick-rails](https://github.com/horaceheaven/quick-rails)
 
-Execute:
 
-<pre><code>vagrant up</pre></code>
+##Execution Steps:##
 
-and connect over ssh
+###using box_url on precise-server box
+- run <pre><code>vagrant up</pre></code>
+- connect over ssh <pre><code>vagrant ssh</pre></code>
 
-<pre><code>vagrant ssh</pre></code>
+###using local file precise-server box
+- download precise-server-cloudimg-amd64-vagrant box
+- move it to a local directory
+- edit Vagrantfile 
+- set config.vm.box_url with the approprate path to your box
+- run <pre><code>vagrant up</pre></code>
+- connect over ssh <pre><code>vagrant ssh</pre></code>
+
 
 
 ##Credits##
