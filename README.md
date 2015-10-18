@@ -6,10 +6,12 @@ with tasks:
 
 Execute:
 
-$vagrant up
+<pre><code>vagrant up</pre></code>
 
 and connect over ssh
 
-$vagrant ssh
+<pre><code>vagrant ssh</pre></code>
+
+
 
 This repository was initial cloned from [horaceheaven/vagrant-ansible-docker](https://github.com/horaceheaven/vagrant-ansible-docker)
