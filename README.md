@@ -13,5 +13,5 @@ and connect over ssh
 <pre><code>vagrant ssh</pre></code>
 
 
-
+##Credits##
 This repository was initial cloned from [horaceheaven/vagrant-ansible-docker](https://github.com/horaceheaven/vagrant-ansible-docker)
