@@ -9,8 +9,8 @@
 Vagrant.configure(2) do |config|
   # Box
   config.vm.box = "ubuntu/precise64"
-  config.vm.box_url = "file:///home/geand/workspace_vagrant/precise-server-cloudimg-amd64-vagrant-disk1.box"
-	#"http://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-amd64-vagrant-disk1.box"
+  #config.vm.box_url = "file:///home/geand/workspace_vagrant/precise-server-cloudimg-amd64-vagrant-disk1.box"
+  config.vm.box_url = "http://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-amd64-vagrant-disk1.box"
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,

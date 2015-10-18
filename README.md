@@ -14,7 +14,7 @@ with tasks:
 ###using local file precise-server box
 - download precise-server-cloudimg-amd64-vagrant box
 - move it to a local directory
-- edit Vagrantfile and set config.vm.box_url with the approprate path to your box
+- edit Vagrantfile and set config.vm.box_url with the approprate local path to your box
 - run <pre><code>vagrant up</pre></code>
 - connect over ssh <pre><code>vagrant ssh</pre></code>
 
