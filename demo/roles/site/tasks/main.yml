@@ -1,6 +1,6 @@
 ---
-#- include: install-tools.yml
-#  when: ansible_distribution in [ 'Debian', 'Ubuntu' ]
+- include: install-tools.yml
+  when: ansible_distribution in [ 'Debian', 'Ubuntu' ]
 
 #- include: install-rails.yml
 
